@@ -48,7 +48,7 @@
 
 import type { Knex } from "knex";
 import dotenv from 'dotenv'; 
-dotenv.config({path:'C:/Users/HP/Desktop/tdl/.env'});
+dotenv.config();
 // dotenv.config();
 
 // import path from "path";

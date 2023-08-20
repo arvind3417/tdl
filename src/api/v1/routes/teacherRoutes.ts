@@ -16,4 +16,4 @@ export const teacherRouter = express.Router();
 
 teacherRouter.route("/journal").post(authenticateToken,adminMiddleware([Roles.TEACHER]),uploadMiddleware,handleJournalCreation);
 teacherRouter.route("/journal/:id").patch(authenticateToken,adminMiddleware([Roles.TEACHER]),uploadMiddleware,handleJournalUpdate).delete(authenticateToken,adminMiddleware([Roles.TEACHER]),deleteJournal);
-teacherRouter.route("/journal/:teacherid").get(authenticateToken,adminMiddleware([Roles.TEACHER]),getJournal)
+teacherRouter.route("/journal/").get(authenticateToken,adminMiddleware([Roles.TEACHER]),getJournal)
