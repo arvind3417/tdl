@@ -225,7 +225,9 @@ if (!allowedExtensions.includes(extension)) {
     async (_req: Request, _res: Response, _next: NextFunction) => {
         try {
             const id  = (<any>_req).user.userId;
-            const res= getteacherJournals(id)
+            const res= await getteacherJournals(id)
+            // console.log(r);
+            
             // const catalog = await Catalog.findOne({ sellerId }).populate('products');
             // _res.json(res);
             _res
