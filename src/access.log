@@ -1,0 +1,1 @@
+::1 - guest [20/Aug/2023:09:49:10 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 308 "-" "PostmanRuntime/7.32.1"
